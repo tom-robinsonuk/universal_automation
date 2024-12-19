@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service AutomationService {
+    rpc SendCommand (CommandRequest) returns (CommandResponse);
+}
+
+message CommandRequest {
+    string command = 1;
+}
+
+message CommandResponse {
+    string result = 1;
+}
