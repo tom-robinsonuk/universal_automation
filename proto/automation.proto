@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package automation;
+
 service AutomationService {
     rpc SendCommand (CommandRequest) returns (CommandResponse);
 }
